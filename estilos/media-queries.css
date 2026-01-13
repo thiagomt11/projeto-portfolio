@@ -1,0 +1,29 @@
+@media screen and (min-width:1280px) {
+
+    main{
+        display: grid;
+        grid-template: repeat(2,1fr) / 1fr 20vw 75vw 1fr;
+        flex: 1;
+    }   
+
+
+    #ficha{
+        grid-area: 1 / 2 / -2 / -3;
+        background-color: var(--fundo-card);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        margin: 15px;
+        padding: 20px;
+        height: 100vh;
+    }
+    
+    
+}
+@media screen and (min-width:768px) {
+    
+    #skill-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}

@@ -1,25 +1,33 @@
+/*Configurações globais*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Definições de cores e temas atraves de variaveis*/
 :root{
     --fundo-principal: #f5f5f5;
     --texto: #222222;
     --texto-inverso: #ffffff;
+    --destaque-escuro: #0011ff;
     --destaque: #0077ff;
     --destaque-inverso: #66bbff;
     --fundo-card: #fff;
 }
 
+/*Corpo global*/
 body{
     font-family: Verdana;
     line-height: 1.5em;
     background-color: var(--fundo-principal);
     color: var(--texto);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
+/*Cabeçalho*/
 header{
     display: flex;
     justify-content: flex-end;
@@ -29,8 +37,11 @@ header{
     padding: 10px;
 }
 
-#menu ul{
+ul{
     list-style: none;
+}
+
+#menu ul{
     display: flex;
     gap: 15px;
 }
@@ -50,22 +61,173 @@ header{
     color: var(--destaque);
 }
 
+/*Conteúdo principal*/
 main{
     display: grid;
-    grid-template: repeat(2,1fr) / 1fr 90% 1fr;
+    grid-template-columns: 1fr 90% 1fr;
+    flex: 1;
 }
+
 
 #ficha{
-    background-color: red;
     grid-area: 1 / 2 / -2 / -2;
+    background-color: var(--fundo-card);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 15px;
+    margin-bottom: 0;
+    padding: 20px;
 }
+
+#ficha figure img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid transparent;
+    outline: 4px solid var(--destaque-escuro);
+    margin-top: 30px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+#ficha figure figcaption h1{
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--destaque-escuro);
+}
+
+#ficha p{
+    text-align:justify;
+    font-size: 0.95em;
+    font-weight: normal;
+}
+
+#redes-sociais{
+    margin-top: 20px;
+}
+
+#redes-sociais ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+#redes-sociais ul li a{
+    font-size: 1.8em;
+    color: var(--destaque-escuro);
+    transition: color 0.3s;
+}
+
+#redes-sociais ul li a:hover{
+    color: var(--destaque);
+}
+
+/*SEGUNDO ARTICLE - DETALHES*/
 
 #detalhes{
-    background-color: yellow;
-    grid-area: 2 / 2 / -1 / -2; 
+    grid-area: 2 / 2 / -1 / -2;
+    margin: 15px;
 }
 
+.cards-detalhes{
+    margin-bottom: 15px;
+    background-color: var(--fundo-card);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.cards-detalhes h2{
+    color: var(--destaque-escuro);
+    margin-bottom: 10px;
+}
+
+/*CARD 1 - SOBRE MIM*/
+#sobre-mim{
+    text-align:justify;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/*CARD 2 - SKILLS*/
+
+#skill-container{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nome{
+    font-weight: bold;
+}
+
+.porcent{
+    font-weight: bold;
+    color: var(--destaque-escuro);
+}
+
+.barra{
+    background-color: var(--fundo-principal);
+    border-radius: 10px;
+    height: 8px;
+    width: 100%;
+}
+
+.progresso{
+    background-color: var(--destaque-inverso);
+    height: 8px;
+    border-radius: 10px;
+}
+
+/*CARD 3 - FORMAÇÃO*/
+
+#formacao-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.curso{
+    background-color: var(--fundo-principal);
+    padding: 10px;
+    border-left: 5px solid var(--destaque-inverso);
+    border-radius: 8px;
+    transition: border-width 0.3s ease, border-color 0.5s ease;
+}
+
+.curso:hover{
+    border-left-width: 10px;
+    cursor: pointer;
+    border-color: var(--destaque-escuro);
+    .instituicao{color: var(--destaque-escuro);}
+}
+
+.periodo{
+    font-size: 0.9em;
+    color: var(--texto);
+}
+
+.instituicao{
+    font-size: 1.3em;
+    color: var(--destaque-inverso);
+}
+
+
+/*Rodapé*/
 footer{
     display: flex;
-    background-color: green;
+    
 }

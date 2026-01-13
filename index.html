@@ -6,6 +6,7 @@
     <title>Portfolio - Thiago Martins</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="scripts/main.js"></script>
 </head>
 
@@ -13,21 +14,199 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Formação</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Tema</a></li>
+                <li><a href="#ficha" aria-label="Acessar ficha"><i class="fas fa-home"></i></a></li>
+                <li><a href="#sobre-mim" aria-label="Acessar sobre mim"><i class="fas fa-info-circle"></i></a></li>
+                <li><a href="#skills" aria-label="Acessar skills"><i class="fas fa-brain"></i></a></li>
+                <li><a href="#formacao" aria-label="Acessar formação"><i class="fas fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" aria-label="Acessar projetos"><i class="fas fa-folder-open"></i></a></li>
+                <li><a href="#" aria-label="Alternar tema"><i class="fas fa-adjust"></i></a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <article id="ficha">
-            Ficha
+            <figure>
+                <img src="foto-de-perfil.jpeg" alt="Foto de Thiago Martins">
+                <figcaption>
+                    <h1>Thiago Martins</h1>
+                </figcaption>
+            </figure>
+            <p>
+                Desenvolvedor Front-End | Apaixonado por criar experiências digitais incríveis. Cursando Engenharia de Software, com habilidades em HTML, CSS, JavaScript, e mais.
+                Buscando sempre aprender e crescer na área de desenvolvimento web.
+            </p>
+
+            <nav id="redes-sociais">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/thiago-martins-784054279/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn de Thiago Martins">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/thiagomt11" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub de Thiago Martins">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
         </article>
 
         <article id="detalhes">
-            Detalhes
+            <article id="sobre-mim" class="cards-detalhes">
+                <h2> <i class="fas fa-info-circle"></i> Sobre Mim</h2>
+                <p>Sou natural de Anápolis, Goiás. Tenho 21 anos e desde pequeno sou apaixonado por tecnologia, desde jogos, programação até hardware. Atualmente, curso o 4º período de Engenharia de Software, na Universidade Evangélica de Goiás (UniEvangélica). Trabalho como assistente de processos, na CAOA Montadora, atuando em desenvolvimentos de sistemas com ferramentas como CFML, HTML, CSS, JavaScript e Oracle DB.</p>
+            </article>
+
+            <article id="skills" class="cards-detalhes">
+                <h2><i class="fas fa-brain"></i> Skills</h2>
+
+                <div id="skill-container">
+                    <!-- Hard Skill 1 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fas fa-code"></i> HTML5
+                            </span>
+                            <span class="porcent">
+                                80%
+                            </span>
+                        </div>
+
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <!-- Hard Skill 2 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fas fa-code"></i> CSS3
+                            </span>
+                            <span class="porcent">
+                                75%
+                            </span>
+                        </div>
+
+                        <div class="barra">
+                            <div class="progresso" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <!-- Hard Skill 3 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fas fa-code"></i> JavaScript
+                            </span>
+                            <span class="porcent">
+                                10%
+                            </span>
+                        </div>
+
+                        <div class="barra">
+                            <div class="progresso" style="width: 10%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Hard Skill 4 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fas fa-code"></i> Python
+                            </span>
+                            <span class="porcent">
+                                40%
+                            </span>
+                        </div>
+
+                        <div class="barra">
+                            <div class="progresso" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <!-- Hard Skill 5 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fas fa-code"></i> Power BI
+                            </span>
+                            <span class="porcent">
+                                65%
+                            </span>
+                        </div>
+
+                        <div class="barra">
+                            <div class="progresso" style="width: 65%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skill 1 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-regular fa-comment-dots"></i> Comunicação
+                            </span>
+                            <span class="porcent">
+                                95%
+                            </span>
+                        </div>
+
+                        <div class="barra">
+                            <div class="progresso" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skill 2 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-regular fa-comment-dots"></i> Trabalho em equipe
+                            </span>
+                            <span class="porcent">
+                                100%
+                            </span>
+                        </div>
+
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Soft Skill 3 -->
+                    <div class="item">
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-regular fa-comment-dots"></i> Liderança
+                            </span>
+                            <span class="porcent">
+                                90%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article id="formacao" class="cards-detalhes">
+                <h2>Formação</h2>  
+                
+                <div id="formacao-container">
+                    <div class="curso">
+                        <p class="periodo">2024 - Atual</p>
+                        <h3 class="instituicao">Universidade Evangélica de Goiás</h3>
+                        <p class="titulacao">Engenharia de Software</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="projetos" class="cards-detalhes">
+                <h2>Projetos</h2>
+            </article>
         </article>
     </main>
     <footer>
