@@ -203,9 +203,12 @@ main{
 .curso{
     background-color: var(--fundo-principal);
     padding: 10px;
-    border-left: 5px solid var(--destaque-inverso);
+    border-left: 5px solid var(--destaque);
     border-radius: 8px;
     transition: border-width 0.3s ease, border-color 0.5s ease;
+    .instituicao{
+        transition: color 0.5s ease;
+    }
 }
 
 .curso:hover{
@@ -218,16 +221,49 @@ main{
 .periodo{
     font-size: 0.9em;
     color: var(--texto);
+    font-weight: bold;
 }
 
 .instituicao{
     font-size: 1.3em;
-    color: var(--destaque-inverso);
+    color: var(--destaque);
 }
 
+/*CARD 4 - PROJETOS*/
+
+#projeto-container{
+    margin-top: 20px;
+}
+.projeto{
+    background-color: var(--fundo-principal);
+    padding: 20px;
+    box-shadow: 2px 1px 4px 1px rgba(0,0,0,0.15);
+    border-radius:10px;
+    border-top: 5px solid var(--destaque-inverso);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.projeto:hover{
+    border-top-color: var(--destaque-escuro);
+    cursor: pointer;
+    transform: translate(0, -4px);
+
+}
+
+.foto{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+     box-shadow: 2px 1px 4px 1px rgba(0,0,0,0.15);
+}
 
 /*Rodapé*/
 footer{
     display: flex;
-    
+    background-color: var(--destaque);
+    padding: 5px;
+    justify-content: center;
+    color: var(--texto-inverso);
+    font-weight: bold;
+    font-size: 0.9em;
 }

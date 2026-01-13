@@ -26,4 +26,24 @@
         grid-template-columns: 1fr 1fr;
     }
     
+    .projeto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .projeto-info{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .foto{
+        grid-column: 2;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    
 }
