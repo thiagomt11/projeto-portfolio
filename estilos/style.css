@@ -17,6 +17,17 @@
 }
 
 /*Corpo global*/
+
+body.escuro{
+    --fundo-principal: #121212;
+    --texto: #e0e0e0;
+    --texto-inverso: #121212;
+    --destaque-escuro: #ff5522;
+    --destaque: #ff5522;
+    --destaque-inverso: #a73917;
+    --fundo-card: #444444;
+}
+
 body{
     font-family: Verdana;
     line-height: 1.5em;
@@ -25,6 +36,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 /*Cabeçalho*/
@@ -35,6 +47,9 @@ header{
     background-color: var(--destaque);
     color:var(--texto);
     padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 ul{
