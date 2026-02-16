@@ -83,7 +83,6 @@ main{
     flex: 1;
 }
 
-
 #ficha{
     grid-area: 1 / 2 / -2 / -2;
     background-color: var(--fundo-card);
@@ -118,7 +117,6 @@ main{
 }
 
 #ficha p{
-    text-align:justify;
     font-size: 0.95em;
     font-weight: normal;
 }
